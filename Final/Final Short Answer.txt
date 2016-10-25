@@ -1,0 +1,56 @@
+1)
+a. no
+b. yes
+c. yes
+d. yes
+
+2)
+a. Static allows main to be called without having to create a specific instance of the class.
+b. The data type of args is an array of Strings.
+c. String[] args is an array of string args (arguments) that you can pass to your program when you run it.
+d. The program or application will terminate.
+
+3)
+a. This line of code tests to see if the difference of joesGrade and marysGrade is less than 5.
+b. This line of code looks to see if the data stored in the variable string1 equals the data stored in the variable string2. If they have the same values, print "same!".
+c. In this line of code, we take x and multiply it by y.
+d. For this code snippet, we create a two-dimensional array of Strings and go through it in a for loop. For each iteration of the for loop, the rows print out the (current) index value ten times before going to the next value. (e.g. 0 ten times, then 1 ten times, etc.) As for the columns, for each iteration of the loop, the values print out normally, printing out 0, 1, 2, 3, etc., until 9, then it repeats until the loop finishes.
+
+4)
+a. I would say something with the if comparison statement.
+b. In order for JOptionPane.showInputDialog(); to work, the data type cannot be anything other than a String.
+c. The for loop counter does not specify a length for the array.
+d. What is wrong here is that int count does not have a square bracket for int[] count;.
+
+5)
+a. 101 times.
+b. It will run indefinitely until stopped.
+
+6)
+  In Java, objects cannot be passed, so we are passing the reference variable by value. The value of the variable is the reference, so we can still pass it by value. Thus, this is called passing a reference by value.
+
+7)
+  double M = (Lizardburgh) (insert temperature here);
+
+8)
+  if (myArray.equals("Godzilla")) {
+      System.out.println("yes");
+    } else {
+      System.out.println("no");
+    }
+
+9)
+  The indices of the element in the third row, fifth column is: myArray[3][5];.
+
+10)
+  System.out.println('+' > '-');
+
+Part 2, One-Paragraph Answer
+
+  We break our applications into methods instead of writing everything in main() because in the end, it will make the code easier to understand and easier to read.
+
+  For instance, say you have a very long block of code or whatnot and you give it to someone else to look at. They may receive it and then think that the code may be somewhat hard to understand.
+
+  In another scenario, what if you have code that contains multiple methods and then give it to someone else to look at. They get it and can then start to say they understand it from the get-go because the application is broken down into one or more methods.
+
+  The general idea is that if you cannot understand the code, break it down into multiple methods. We also write multiple methods in order to simplify things down so nothing is complicated.

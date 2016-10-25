@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CS 201 Lab 3</title>
+	<style>
+		table {
+			width: 20%;
+			border-style: solid;
+		}
+
+		th {
+			text-align: left;
+		}
+
+		td {
+			width: 33%;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h2> CS 201 Lab 3 </h2>
+</header>
+<h4>Part I: Short Answers, 5 points each
+	<br/>
+	Due at the end of the first lab period in week 4. Turn in a plain text file on CSNS. </h4>
+<ol>
+	<li>
+		Consider the following code, which calculates the charge for ordering an item in a restaurant.
+		<pre>
+Scanner sc = new Scanner(System.in);
+double totalCost = 0d;
+System.out.println("Please enter 'S' to order a salad, 'M' for a Martini, or 'F' for a filet mignon");
+char choice = sc.next().charAt(0);
+switch(choice){
+	case 'S':
+		totalCost += 3.75;
+	case 'M':
+		totalCost += 6.50;
+	case 'F':
+		totalCost += 35.00;
+}
+		</pre>
+		a) What will the customer be charged if he orders only a filet mignon?
+		<br/>
+		b) What will the customer be charged if orders only a salad?
+		<br/>
+		c) How could we make this code work correctly?
+		<p/>
+	</li>
+	<li>
+		Consider this statement:
+		<br/>
+		System.out.println(godzillaApproaching?"run for the hills!":"carry on as usual");
+		<br/>
+		a) What does the statement do?
+		<br/>
+		b) What is the data type of the variable godzillaApproaching?
+		<p/>
+	</li>
+	<li>
+		The final Math.PI will supply the value of pi. Use printf to print the value of some
+		integer radius (for example, 5), the value of Math.PI, and the circumference
+		of a circle of the stated radius. Show the last two values to exactly four places past the
+		decimal point.
+		<p/>
+	</li>
+	<li>
+		Suppose that the value of x % y is 1. Can we tell whether x is evenly divisible by y? If so, is it? Can we tell
+		whether y is evenly divisible by x? If so, is it?
+	</li>
+	<li>
+		Consider the following truth table:
+		<table>
+			<thead>
+			<tr>
+				<th>a</th>
+				<th>b</th>
+				<th>Value</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>f</td>
+				<td>f</td>
+				<td>f</td>
+			</tr>
+			<tr>
+				<td>f</td>
+				<td>t</td>
+				<td>f</td>
+			</tr>
+			<tr>
+				<td>t</td>
+				<td>f</td>
+				<td>f</td>
+			</tr>
+			<tr>
+				<td>t</td>
+				<td>t</td>
+				<td>t</td>
+			</tr>
+			</tbody>
+		</table>
+		What Java logical operator corresponds to this truth table?
+	</li>
+</ol>
+<h4>Part II: Programming Assignment, 75 points</h4>
+<br/>Check CSNS for Due Date<br/>
+<p>
+	Write a Java program that does the following:
+</p>
+
+<ul>
+	<li>
+		Prompts the user for the following information and stores the input in appropriate variables:
+	<li>
+		Whether the user is left-handed
+	</li>
+	<li>
+		Whether the user's father was less than 5 ft 8 inches tall
+	</li>
+	<li>
+		The user's age in months
+	</li>
+	<li>
+		The name of a sibling or friend of the user
+	</li>
+	<li>
+		The age in months of the sibling or friend
+	</li>
+	<li>
+		The user's GPA
+	</li>
+	<li>
+		The displacement in liters of the user's car engine
+	</li>
+</ul>
+</li>
+<li>
+	Prints out the following information, using System.out.println() for the output:
+	<ul>
+		<li>
+			a) Whether the user is left-handed
+		</li>
+
+		<li>
+			b) Whether the user's father was less than 5 ft 8 inches tall
+		</li>
+		<li>
+			c) Whether at least one of the values from a and b are true (true if either or both are true)
+		</li>
+		<li>
+			d) Whether a and b are both true (false if at least one is false)
+		</li>
+		<li>
+			e) Whether the truth values of a and b are the same (true if both a and b are true or if
+			both a and b are false)
+		</li>
+		<li>
+			f) Whether the user is older than his/her sibling/friend (as far as we can tell from the ages in months.) Show the
+			sibling or friend's name in the output (eg, "Sally is older than you!"
+		</li>
+		<li>
+			g) Whether the user's age in months is within 18 months of the age of the sibling/friend.
+			You may want to use Math.abs(), which computes the absolute value of a number, for this.
+		</li>
+		<li>
+			h) Whether the user's age in months is evenly divisible by 6
+		</li>
+
+		<li>
+			i) Whether the user's GPA is at least equal to the displacement in liters of his/her car engine
+		</li>
+	</ul>
+</li>
+
+</body>
+</html>

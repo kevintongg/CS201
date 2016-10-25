@@ -1,0 +1,68 @@
+Part I: Short Answers, 5 points each 
+Due at the end of the first lab period in week 4. Turn in a plain text file on CSNS.
+
+1. Consider the following code, which calculates the charge for ordering an item in a restaurant.
+Scanner sc = new Scanner(System.in);
+double totalCost = 0d;
+System.out.println("Please enter 'S' to order a salad, 'M' for a Martini, or 'F' for a filet mignon");
+char choice = sc.next().charAt(0);
+switch(choice){
+	case 'S':
+		totalCost += 3.75;
+	case 'M':
+		totalCost += 6.50;
+	case 'F':
+		totalCost += 35.00;
+}
+		
+a) What will the customer be charged if he orders only a filet mignon? 
+	35.00
+b) What will the customer be charged if orders only a salad? 
+	45.25
+c) How could we make this code work correctly?
+	add break; to every case
+
+	e.g.
+
+	switch(choice){
+	case 'S':
+		totalCost += 3.75;
+		break;
+	case 'M':
+		totalCost += 6.50;
+		break;
+	case 'F':
+		totalCost += 35.00;
+		break;
+}
+
+2. Consider this statement: 
+System.out.println(godzillaApproaching?"run for the hills!":"carry on as usual"); 
+a) What does the statement do? 
+	This statement prints the the data stored in the variable godzillaApproaching with the ternary operator ?: which translates to if-then-else (shorthand).
+	(If Godzilla is approaching, run for the hills. If not (else), carry on as usual.)
+b) What is the data type of the variable godzillaApproaching?
+	String
+
+3. The final Math.PI will supply the value of pi. Use printf to print the value of some integer radius (for example, 5), the value of Math.PI, and the circumference of a circle of the stated radius. Show the last two values to exactly four places past the decimal point.
+	{
+		int radius = 5;
+		double pi = Math.PI;
+		double circumference = ((radius * 2)* Math.PI);
+		System.out.printf("radius = %d\n%s = %.4f\ncircumference = %.4f\n",radius,"\u03c0",pi,circumference);
+	}
+
+	(\u03c0 = pi (π) in source)
+
+4. Suppose that the value of x % y is 1. Can we tell whether x is evenly divisible by y? If so, is it? Can we tell whether y is evenly divisible by x? If so, is it?
+	Yes, we can. No, x is not evenly divisible by y. We can tell if y is evenly divisible by x. No, y is not evenly divisible by x because due to the fact that we had x % y = 1, we can assume x was a bigger integer than y was (e.g. 7 = x 6 = y; 7 % 6 = 1, but 6 % 7 returns a remainder (a decimal) which is not 0. And if the remainder was 0, we could say that it is even divisible). If the answer/remainder results to 0, it is evenly divisible.
+
+5. Consider the following truth table:
+a	b	Value
+f	f	f
+f	t	f
+t	f	f
+t	t	t 
+
+What Java logical operator corresponds to this truth table?
+	The && operator.

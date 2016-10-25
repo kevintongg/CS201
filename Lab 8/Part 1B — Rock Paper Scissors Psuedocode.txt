@@ -1,0 +1,61 @@
+Program is to simulate a game of Rock Paper Scissors with input taken from user for the sign they want.
+
+You can first assign the values of rock, paper, scissors to 0, 1, and 2 respectively.
+
+We can also use switch/case statements to create this game.
+
+We can assume this game will run indefinitely until the user decides to stop.
+
+PROGRAM: ROCK, PAPER, SCISSORS
+
+initialize a Scanner with a Scanner variable for console input
+
+initialize an int with a variable name of "choice" and a value of 0
+
+initialize a do... while loop
+do
+  ask input from user for what choice they want:
+    0 for rock, 1 for paper, 2 for scissors
+
+  randomize a choice from the computer/AI:
+    randomize a choice: 0 for rock, 1 for paper, 2 for scissors
+
+  assign input to choice
+    choice equals to name of scanner next integer
+
+  switch choice statement with breaks
+  case 1:
+    if user picked 0 for rock
+      if computer randomized 0 for rock
+        print "it is a draw."
+      else if computer randomized 1 for paper
+        print "sorry, you lost."
+      else if computer randomized 2 for scissors
+        print "congratulations! you won!"
+    insert break;
+
+  case 2:
+    if user picked 1 for paper
+      if computer randomized 1 for paper
+        print "it is a draw."
+      else if computer randomized 2 for scissors
+        print "sorry, you lost."
+      else if computer randomized 0 for rock
+        print "congratulations! you won!"
+    insert break;
+
+  case 3:
+    if user picked 2 for scissors
+      if computer randomized 2 for scissors
+        print "it is a draw."
+      else if computer randomized 0 for rock
+        print "sorry, you lost."
+      else if computer randomized 1 for paper
+        print "congratulations! you won!"
+    insert break;
+
+  to make sure user enters valid input for the range of 0 to 2
+  if pick is not between 0 to 2
+    print "invalid input, try again."
+
+while user choice does not equal 0, the loop ends and thus the game ends

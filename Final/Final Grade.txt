@@ -1,0 +1,50 @@
+Grade: 84
+
+Part 1:  Short Answers, 4 points each
+1.	-2 (static methods) D only
+2c) Why does main take that particular data type as a parameter?
+better answer: because Strings can be parsed to many other data types and we may need any number of input values 
+4a) if(x == 3.14159) System.out.println("x = PI!");
+-1 should not test doubles for equality using ==
+ c) 
+public static String[] getStringArrayFromInput(int n) {
+String[] theArray = new String[n];
+for (int counter = 1; counter < n; counter++)
+		theArray[counter] = JOptionPane.showInputDialog(null,
+		"Please enter a String value");		
+return theArray;
+}
+
+Missed first value in array
+
+d) 
+public static int getIntArrayFromInput(int count) {
+	int[] theArray = new int[count];
+	for (int i = 0; i < count; i++)
+		theArray = Integer.parseInt(JOptionPane.showInputDialog(null, "Please enter an integer value"));	
+	}
+return theArray;
+}
+
+clearer answer: method should return an int but returns an array of ints.  Also, tries to assign an int value to an array of ints.
+
+6. Why does Java use "pass reference by value" instead of plain "pass by value" to pass arrays to methods as parameters and to return arrays from methods? 
+better answer: since an array might have any size, it might be very expensive to copy it. 
+
+7.  Mooseville... -4
+l = (m + 5) * -2;
+
+
+9. Suppose you have a two-dimensional array called myArray.  What are the indices of the element in the third row,
+fifth column?  Be sure to list the indices in the correct order.  
+
+-4 IMPORTANT! myArray[2][4] 
+
+part 3:
+-5
+	public static void show32BitCount(long[] longArray){
+		int intCount = 0;
+		for(long l : longArray)	if(l >= -2147483648 && l <= 2147483647) intCount++;			
+		System.out.println("Array contains " + longArray.length + " values, of which " + intCount +" are within the range of the Java int type");
+		
+	}

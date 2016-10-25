@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CS 201 Lab 4</title>
+</head>
+<body>
+<h2>CS 201 Lab 4 </h2>
+<h3>Part I: Due at the end of the first lab period of week 5</h3>
+<p>
+	5 points each
+</p>
+<ol>
+	<li>
+		Consider this code and output:
+		<pre>
+double a = 3.30;
+double b = 1.59;
+double c = a / b;
+double d = c * b;
+System.out.println(a == d);
+            </pre>
+		output:
+		<pre>
+false
+            </pre>
+		Why does this code produce the output shown?
+		<p/>
+	</li>
+	<li>
+		What will these code snippets do?
+		<br/>
+		a)
+		<pre>
+while(counter <= 100);{
+    System.out.println(counter);
+    counter++;
+}                                   
+            </pre>
+		b)
+		<pre>
+for(int counter = 0; counter < 100; counter++){
+    System.out.println(counter);
+    counter--;
+}       
+            </pre>
+		<p/>
+	</li>
+	<li>
+		Consider this code:
+
+		<pre>
+		boolean betterExists = false;
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out
+					.println("Is there a better class than CS201? Enter y or n\n");
+			if (sc.next().equals("n"))
+				betterExists = false;
+			else
+				betterExists = true;
+		} while (betterExists);
+		System.out.println("You got it right!");
+</pre>
+		Invalid input (like "maybe" or "42") causes the loop to run again, rather than crash. How does this work?
+	</li>
+	<li>
+		What does this code do?
+		<pre>
+for(int counter = 1; counter <= 100; counter++){
+    System.out.println(counter + ": " + (counter % 7 == 0?"true":"false"));          
+}        
+    </pre>
+	</li>
+
+	<li>
+		Answer the question below in one well-constructed paragraph. A well-constructed paragraph has an introductory
+		sentence that states the general point, several sentences that offer examples or arguments, and a concluding
+		sentence that sums
+		up the paragraph.
+
+		<p>
+			Why do we use computer programs to control dishwashers but pay human beings to design dishwashers?
+		</p>
+	</li>
+</ol>
+
+<h3>Part II, Check CSNS for due date</h3>
+<p>
+	75 points
+</p>
+
+<p>
+	Write a program that calculates the effect that various possible grades in CS201 will have on the user's GPA
+</p>
+<ol>
+	<li>
+		Use Console input to ask the user for his or her present GPA and the number of total units
+		he or she has taken. Cast these to a Double and an Integer.
+	</li>
+	<li>
+		For each of the above variables, ask the user repeatedly until s/he enters reasonable values. A GPA cannot be
+		greater than 4.0 nor less than 0.0,
+		and the number of units completed can't be less than 0. However, it is OK
+		if the program breaks when the user enters input that cannot be parsed to the numeric types (for example, if user
+		inputs
+		age a).
+	</li>
+	<li>
+		For simplicity, you may assume the user is not taking any other classes this term. If you want an extra challenge,
+		you may figure out on your own how to account for other classes taken this term.
+	</li>
+	<li>
+		Note that CS201 is a 5 unit class. Use a variable or constant for this value so that you could easily change it if
+		you wanted to
+		apply this program to another class.
+	</li>
+	<li>
+		The new GPA is calculated this way: ((present GPA * existing units) + (new units * grade)) / (existing units + new
+		units)
+	</li>
+	<li>
+		Use a loop to find the effect on the student's GPA for each possible grade from A to C. An A grade corresponds
+		to 4 grade points, an A- corresponds to 3.7, B+ is worth 3.3, etc. Use a while or do...while loop with a separate
+		group of if statments
+		that decrements the grade by 0.3 if it was 4.0, 3.3, 3.0, or 2.3 or decrements it by 0.4 if it was 3.7 or 2.7.
+	</li>
+	<li>
+		You will need to use Math.abs() in the loop test. Due to the imprecision of floating point types,
+		you will not get correct results if you simply test whether a grade is, for example, equal to 3.0.
+		See lecture 5.
+	</li>
+	<li>
+		Think carefully about the test in the while or do...while loop. The loop should break after the output is shown for
+		a grade of 2.0.
+	</li>
+	<li>
+		For each possible grade, show the grade, the new GPA, and the change between the old and new GPAs.
+	</li>
+</ol>
+
+</body>

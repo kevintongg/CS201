@@ -1,0 +1,33 @@
+Part A, 24 points: due at the end of the second class meeting
+
+Answer the following questions in one to four sentences each. You may consult the lecture notes or textbook. Do not copy any text; write the answers in your own words.
+
+1. Why do programmers need to carefully consider data types like int and double?
+
+When you use int, you usually do not include numbers that have decimals; with double, normally there are decimals involved.
+
+The data type "int" is normally used to store integers and also integers in the 32-bit range of numbers.
+
+The data type "double" is the default go-to choice when dealing with decimals as "int" is just used with integers, or whole numbers.
+
+2. Assembly language gives programmers maximum control over the details of computer programs and thus usually produces code that uses resources and time very efficiently. Why do we usually use high level languages instead of assembly?
+
+Assembly is infrequently used practically and is usually used to understand the fundamentals, but not really in a real life work/job environment.
+
+3. Most programming languages are either compiled or interpreted, but Java uses a two-step process in which source code is compiled to bytecode, which is interpreted at runtime. What is the benefit of this process?
+
+The benefit of this process is that bytecode can be interpreted by any platform. When Java reads the source code before it is ran, it is compiled to bytecode and in that, it can be read on Windows, OS X, Linux, etc. so it is universal.
+
+4. Suppose you compile and run the class MyClass at the command line. The file name will be MyClass.java. 
+a) What does the command javac MyClass.java do? 
+The command "javac MyClass.java" compiles the Java file into a class file.
+b) What does the command java MyClass do?
+The command "java MyClass" runs the ".class" file that was compiled from the ".java" file from the command "javac MyClass.java."
+
+5. Why doesn't the programmer have to decide which specific transistors to use to store data or which program can access a CPU at a particular time?
+
+The computer will decide how much data to store, how much memory to occupy, and/or which program can access the CPU or how many cores to be used.
+
+6. Suppose you have already paid for your computer. Why do we still say that CPU time or memory is expensive?
+
+CPU time/Memory is expensive because in the past, hardware was prevalently more expensive than the time of the programmer compared to present day prices. Nowadays, hardware has become more affordable and we are now paying the individual and we are supposed to use the programmer's time as productively and efficiently as possible.

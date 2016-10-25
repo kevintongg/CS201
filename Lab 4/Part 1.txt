@@ -1,0 +1,73 @@
+Part I: Due at the end of the lab period on Weds.
+
+5 points each
+
+1. Consider this code and output:
+	double a = 3.30;
+	double b = 1.59;
+	double c = a / b;
+	double d = c * b;
+	System.out.println(a == d);
+	            
+	output:
+	false
+	            
+Why does this code produce the output shown?
+
+	This code produces the result false because we aren't comparing the value assigned to the variable, but rather the variable itself.
+
+	To get a proper result, I believe we'd need to use a.equals(d);.
+
+2. What will these code snippets do? 
+	a)	                  
+		while(counter <= 100);{
+		    System.out.println(counter);
+		    counter++;
+		}                              
+            
+	This will run a loop counting from 0 until it reaches < 100 which is 99, then terminates. It starts at 0, then adds 1 (hence the ++) until < 100.
+
+	b)
+		for(int counter = 0; counter < 100; counter++){
+		    System.out.println(counter);
+		    counter--;
+		}     
+
+	This will run a loop that just loops 0 until terminated/stopped. It behaves like so because counter++ and counter-- contradict each other, thus cancelling each other out.
+
+3. Consider this code:
+		boolean betterExists = false;
+		Scanner sc = new Scanner(System.in);
+		do {
+			System.out
+					.println("Is there a better class than CS201? Enter y or n\n");
+			if (sc.next().equals("n"))
+				betterExists = false;
+			else
+				betterExists = true;
+		} while (betterExists);
+		System.out.println("You got it right!");
+Invalid input (like "maybe" or "42") causes the loop to run again, rather than crash. How does this work?
+
+	How it works is that when you input anything other than "y" or "n", it will cause the loop again because it is looking for the value/character of "n" and anything other than "n" will make the loop run until you input "n" due to the line "if (sc.next().equals("n"))".
+                
+4. What does this code do?
+	for(int counter = 1; counter <= 100; counter++){
+	    System.out.println(counter + ": " + (counter % 7 == 0?"true":"false"));          
+	}        
+
+	This code will run a counter until it hits 100. What the program does is count to 100 while checking if each number to 100 is evenly divisible by 7.
+
+	If the number is evenly divisible, it will print true, else it will print false.
+    
+5. Answer the question below in one well-constructed paragraph. A well-constructed paragraph has an introductory sentence that states the general point, several sentences that offer examples or arguments, and a concluding sentence that sums up the paragraph.
+
+Why do we use computer programs to control dishwashers but pay human beings to design dishwashers?
+
+	Why do we use computer programs to control dishwashers but pay human beings to design dishwashers? We write programs to control the functions of a dishwasher because that's the point of a dishwasher; to run a specific function from the options accepted/inputted. We pay individuals to design dishwashers because no individual can write a program to design the dishwasher. Designing dishwashers take intuition and ingenuity. We do not expect human beings to control the dishwasher partly because once you close the dishwasher door, you can't simply just turn the gears and whatnot of the machine.
+
+	For example, say we want to do a specific cycle or a specific job for the dishwasher to execute. That cycle or job may end up taking hours to do and time is important to an individual. For time wasted, that individual could have accomplished many things versus the time used making the dishwasher work (manual labor in a sense). Making a program to control a dishwasher is more efficient than having a human control it due to the efficiency of the program executing a specific function.
+
+	Say that you do have the human control the dishwasher and a program to design dishwashers. With the human controlling the dishwasher, how can he/she make the water come/spray out inside? How can he/she make the parts work to speed expected of a typical modern dishwasher? They just can't because it just isn't very practical to do so. For having a program design a dishwasher, how can the program deal with the intricacies and the ins and outs of designing a dishwasher? Programs can only do what they are told/coded to do and the program could account for unforeseen circumstances, but most of the time it probably won't.
+
+	In conclusion, we can say that it is definitely better to have programs and humans do their original purpose and intent; to have programs control dishwashers and humans designing them. For the jobs assigned, a program controlling the dishwasher is definitely more practical and efficient than a human doing everything the program could do in a fraction of the time. Same could be said for the human designing potential dishwasher.

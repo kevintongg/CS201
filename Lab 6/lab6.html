@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-	<title>CS 201 Lab 6 </title>
-	<link rel="stylesheet" href="../../style/style5.css"/>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>CS 201 Lab 6 </title>
+  <link rel="stylesheet" href="../../style/style5.css"/>
 </head>
 <body>
 <header>
-	<h2>CS 201 Lab 6</h2>
+  <h2>CS 201 Lab 6</h2>
 </header>
 <section>
-	Write a Java class that performs the user's choice of geometric calculations. You may use either
-	console or JOptionPane I/O, but do not mix them.
+  Write a Java class that performs the user's choice of geometric calculations. You may use either
+  console or JOptionPane I/O, but do not mix them.
 
-	<ul>
-		<li>
-			<p>
-				Write a method that takes three parameters, namely one String and two doubles. The method should generate
-				a prompt based on the String and require the user to enter a double value that is no less than the
-				first double and no larger than the second. For example, if the method is called with parameters
-				"radius", 0.0 and 100.5, the prompt will say "Please enter a value between 0.0 and 100.5 for
-				the radius." Do not use if statements or other conditionals to match specific possible
-				Strings; instead, use the String parameter in the prompt.
-			<p>
-				Use a while or do...while loop to ask the user repeatedly until s/he enters a value within the
-				correct range. If the user enters a value outside the range, provide an error message explaining the problem.
-				If you use Console I/O, validate for the data type; if you use JOptionPane,
-				it is OK if the application crashes on input that cannot be parsed to double. When the user
-				enters valid input, the method should return the value entered. Use this method to get
-				whatever input is required from the user for each type of calculation in the other methods listed
-				below.
-			</p>
-		</li>
+  <ul>
+    <li>
+      <p>
+        Write a method that takes three parameters, namely one String and two doubles. The method
+        should generate
+        a prompt based on the String and require the user to enter a double value that is no less
+        than the
+        first double and no larger than the second. For example, if the method is called with
+        parameters
+        "radius", 0.0 and 100.5, the prompt will say "Please enter a value between 0.0 and 100.5 for
+        the radius." Do not use if statements or other conditionals to match specific possible
+        Strings; instead, use the String parameter in the prompt.
+      <p>
+        Use a while or do...while loop to ask the user repeatedly until s/he enters a value within
+        the
+        correct range. If the user enters a value outside the range, provide an error message
+        explaining the problem.
+        If you use Console I/O, validate for the data type; if you use JOptionPane,
+        it is OK if the application crashes on input that cannot be parsed to double. When the user
+        enters valid input, the method should return the value entered. Use this method to get
+        whatever input is required from the user for each type of calculation in the other methods
+        listed
+        below.
+      </p>
+    </li>
 
-		<li>
-			In main(), prompt the user to choose one of the following: quit, calculate the area
-			of a triangle, calculate the volume of a sphere, or calculate the volume of a cylinder.
-			Get the user's choice and use a switch statement to call the appropriate method
-			for the operation the user chooses. This prompt must be inside a loop that will terminate when
-			the user chooses to quit. The user will be able to make as many calculations as s/he chooses,
-			continuing until he or she choose to quit.
-		</li>
+    <li>
+      In main(), prompt the user to choose one of the following: quit, calculate the area
+      of a triangle, calculate the volume of a sphere, or calculate the volume of a cylinder.
+      Get the user's choice and use a switch statement to call the appropriate method
+      for the operation the user chooses. This prompt must be inside a loop that will terminate when
+      the user chooses to quit. The user will be able to make as many calculations as s/he chooses,
+      continuing until he or she choose to quit.
+    </li>
 
-		<li>
-			Use a separate method for each type of calculation.
-		</li>
-		<li>
-			Return the result of each calculation to main, and display it. Do not do any output in the
-			calculation methods.
-		</li>
-		<li>
-			Keep track of the largest triangle, largest sphere, and largest cylinder seen so far. When the program
-			terminates, show the size of the largest example of each type.
-		</li>
+    <li>
+      Use a separate method for each type of calculation.
+    </li>
+    <li>
+      Return the result of each calculation to main, and display it. Do not do any output in the
+      calculation methods.
+    </li>
+    <li>
+      Keep track of the largest triangle, largest sphere, and largest cylinder seen so far. When the
+      program
+      terminates, show the size of the largest example of each type.
+    </li>
 
-		<li>
-			Use these formulas:
-			<ul>
-				<li>
-					Area of a triangle: 1/2 * base * height
-				</li>
-				<li>
-					Volume of a sphere: 4/3 &pi; r<sup>3</sup>
-				</li>
-				<li>
-					Volume of a cylinder: &pi; r<sup>2</sup> * height
-				</li>
-			</ul>
-		</li>
-		<li>
-			Use a final that is accessible anywhere in the class for PI. Limit all variables to the most restrictive scope
-			that
-			will work.
-		</li>
+    <li>
+      Use these formulas:
+      <ul>
+        <li>
+          Area of a triangle: 1/2 * base * height
+        </li>
+        <li>
+          Volume of a sphere: 4/3 &pi; r<sup>3</sup>
+        </li>
+        <li>
+          Volume of a cylinder: &pi; r<sup>2</sup> * height
+        </li>
+      </ul>
+    </li>
+    <li>
+      Use a final that is accessible anywhere in the class for PI. Limit all variables to the most
+      restrictive scope
+      that
+      will work.
+    </li>
 
-	</ul>
+  </ul>
 </section>
 </body>
 </html>

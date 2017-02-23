@@ -15,7 +15,8 @@ public class Lab6 {
     int pick;
 
     do {
-      System.out.println("Enter 0 to quit, 1 to calculate the area of a triangle, 2 to calculate the volume of a sphere, 3 to calculate the volume of a cylinder.");
+      System.out.println(
+          "Enter 0 to quit, 1 to calculate the area of a triangle, 2 to calculate the volume of a sphere, 3 to calculate the volume of a cylinder.");
       pick = sc.nextInt();
       switch (pick) {
         case 1:
@@ -29,13 +30,16 @@ public class Lab6 {
           break;
       }
       if (pick < 0 || pick > 3) {
-        System.out.println("Invalid input. Please enter 0 to quit, 1 to calculate the area of a triangle, 2 to calculate the volume of a sphere, 3 to calculate the volume of a cylinder.");
+        System.out.println(
+            "Invalid input. Please enter 0 to quit, 1 to calculate the area of a triangle, 2 to calculate the volume of a sphere, 3 to calculate the volume of a cylinder.");
       }
     } while (pick != 0);
 
-    System.out.printf("The greatest area calculated for your triangle is: %.2f.\n", greatestTriangle);
+    System.out
+        .printf("The greatest area calculated for your triangle is: %.2f.\n", greatestTriangle);
     System.out.printf("The greatest volume calculated for your sphere is: %.2f.\n", greatestSphere);
-    System.out.printf("The greatest volume calculated for your cylinder is: %.2f.\n", greatestCylinder);
+    System.out
+        .printf("The greatest volume calculated for your cylinder is: %.2f.\n", greatestCylinder);
   }
 
   public static double calcTriangleArea() {
@@ -59,14 +63,17 @@ public class Lab6 {
 
     do {
       // Asks user a height
-      System.out.println("Please enter a height between 0.0 and 123.45 (A value that is bigger than your first number, please).");
+      System.out.println(
+          "Please enter a height between 0.0 and 123.45 (A value that is bigger than your first number, please).");
       while (!sc.hasNextDouble()) {
         sc.nextLine();
-        System.out.println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
+        System.out
+            .println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
       }
       h1 = sc.nextDouble();
       if (b > h1 || h1 > 123.45) {
-        System.out.println("A height value that is higher than the first number, but no more than 123.45 please!");
+        System.out.println(
+            "A height value that is higher than the first number, but no more than 123.45 please!");
       }
     } while (b > h1 || h1 > 123.45);
 
@@ -88,7 +95,8 @@ public class Lab6 {
       System.out.println("Please input a radius value between 0.0 and 123.45.");
       while (!sc.hasNextDouble()) {
         sc.nextLine();
-        System.out.println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
+        System.out
+            .println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
       }
       r2 = sc.nextDouble();
       if (r2 < 0.0 || r2 > 123.45) {
@@ -114,7 +122,8 @@ public class Lab6 {
       System.out.println("Please input a radius between 0.0 and 123.45.");
       while (!sc.hasNextDouble()) {
         sc.nextLine();
-        System.out.println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
+        System.out
+            .println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
       }
       r2 = sc.nextDouble();
       if (r2 < 0.0 || r2 > 123.45) {
@@ -124,14 +133,17 @@ public class Lab6 {
 
     do {
       // Asks user for a height
-      System.out.println("Please input a height between 0.0 and 123.45 (A value that is bigger than your first number, please).");
+      System.out.println(
+          "Please input a height between 0.0 and 123.45 (A value that is bigger than your first number, please).");
       while (!sc.hasNextDouble()) {
         sc.nextLine();
-        System.out.println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
+        System.out
+            .println("Your input is invalid and cannot be used or is not between 0.0 to 123.45");
       }
       h2 = sc.nextDouble();
       if (r2 > h2 || h2 > 123.45) {
-        System.out.println("A height value that is higher than the first number, but no more than 123.45 please!");
+        System.out.println(
+            "A height value that is higher than the first number, but no more than 123.45 please!");
       }
     } while (r2 > h2 || h2 > 123.45);
 

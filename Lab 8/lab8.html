@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
-	<title>CS 201 Lab 8 </title>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>CS 201 Lab 8 </title>
 </head>
 <body>
 <h2>CS 201 Lab 8</h2>
 <h3>Part I: due at the end of the first lab period in Week 10</h3>
 <p>
-	1a, 15 points. Implement the "bizzbuzz" pseudocode from lecture 13 in a Java application
+  1a, 15 points. Implement the "bizzbuzz" pseudocode from lecture 13 in a Java application
 </p>
 <p>
-	1b, 15 points. Write pseudocode for the game of <a href="https://en.wikipedia.org/wiki/Rock-paper-scissors"> "Rock,
-	Paper, Scissors"</a>
+  1b, 15 points. Write pseudocode for the game of <a
+    href="https://en.wikipedia.org/wiki/Rock-paper-scissors"> "Rock,
+  Paper, Scissors"</a>
 </p>
 <h3> Part II, 70 points, check CSNS for due date</h3>
 <p>
-	Write a Java application that implements a two-player game of Tic Tac Toe.
+  Write a Java application that implements a two-player game of Tic Tac Toe.
 </p>
 <ul>
-	<li>
-		Use a two-dimensional array of chars to represent the board. Use blanks rather than null
-		values to represent unoccupied squares. You can create the board as follows (note that there are blanks between
-		the single quotes, even though this may not be clear in your browser): <br/>
-		char [][] board ={{'&nbsp;','&nbsp;','&nbsp;'},{'&nbsp;','&nbsp;','&nbsp;'},{'&nbsp;','&nbsp;','&nbsp;'}};
-	</li>
-	<li>
-		Use a variable whose data type is an enum to keep track of which player should move next. The
-		possible values for the enum are "O" and "X". Each time a player moves, toggle the value of the
-		variable to indicate that the turn has changed.
-	</li>
-	<li>
-		For each move, show the current state of the board, indicate whose turn it is, and ask for the
-		next move. You may use either Console or JOptionPane I/O, but do not mix them. There are various
-		reasonable formats for the input, but one possibility is to ask separately for the row and column of
-		the square the user wants to occupy.
-	</li>
-	<li>
-		Use the user input to update the board. Do not allow moves to squares that are already occupied.
-	</li>
-	<li>
-		<strong>This is the hard part.</strong> After each move, run a method that determines whether or not
-		a player has won the game. Consider all eight possible ways to win. If a player has won, provide output
-		that indicates the victor.
-	</li>
-	<li>
-		<strong>Hard</strong> extra credit: write and use a method that automatically determines the moves for
-		one player, so that a single player can play against the computer. This will involve making a deep
-		copy of the board and considering the effect of hypothetical moves. The first thing to consider is whether
-		any available move will result in immediate vicory; if so, make that move. If not, consider whether the
-		opponent has a winning move available at his next turn; if so, block it by occupying that square. You
-		should think out the rest of the strategy from this point.
-	</li>
+  <li>
+    Use a two-dimensional array of chars to represent the board. Use blanks rather than null
+    values to represent unoccupied squares. You can create the board as follows (note that there are
+    blanks between
+    the single quotes, even though this may not be clear in your browser): <br/>
+    char [][] board ={{'&nbsp;','&nbsp;','&nbsp;'},{'&nbsp;','&nbsp;','&nbsp;'},{'&nbsp;','&nbsp;','&nbsp;'}};
+  </li>
+  <li>
+    Use a variable whose data type is an enum to keep track of which player should move next. The
+    possible values for the enum are "O" and "X". Each time a player moves, toggle the value of the
+    variable to indicate that the turn has changed.
+  </li>
+  <li>
+    For each move, show the current state of the board, indicate whose turn it is, and ask for the
+    next move. You may use either Console or JOptionPane I/O, but do not mix them. There are various
+    reasonable formats for the input, but one possibility is to ask separately for the row and
+    column of
+    the square the user wants to occupy.
+  </li>
+  <li>
+    Use the user input to update the board. Do not allow moves to squares that are already occupied.
+  </li>
+  <li>
+    <strong>This is the hard part.</strong> After each move, run a method that determines whether or
+    not
+    a player has won the game. Consider all eight possible ways to win. If a player has won, provide
+    output
+    that indicates the victor.
+  </li>
+  <li>
+    <strong>Hard</strong> extra credit: write and use a method that automatically determines the
+    moves for
+    one player, so that a single player can play against the computer. This will involve making a
+    deep
+    copy of the board and considering the effect of hypothetical moves. The first thing to consider
+    is whether
+    any available move will result in immediate vicory; if so, make that move. If not, consider
+    whether the
+    opponent has a winning move available at his next turn; if so, block it by occupying that
+    square. You
+    should think out the rest of the strategy from this point.
+  </li>
 </ul>
 </body>
 </html>

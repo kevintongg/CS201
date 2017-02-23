@@ -21,8 +21,9 @@ public class Lab4 {
         System.out.println("A decimal GPA please!");
       }
       currentGPA = input.nextDouble();
-      if (currentGPA < 0.0 || currentGPA > 4.0)
+      if (currentGPA < 0.0 || currentGPA > 4.0) {
         System.out.println("A GPA between 0.0 and 4.0 please!");
+      }
     } while (currentGPA < 0.0 || currentGPA > 4.0);
 
     System.out.println("Your GPA is " + currentGPA + "" + ".");
@@ -36,8 +37,9 @@ public class Lab4 {
       }
       numOfUnits = input.nextInt();
 
-      if (numOfUnits < 0)
+      if (numOfUnits < 0) {
         System.out.println("Invalid input!");
+      }
     } while (numOfUnits < 0);
 
     System.out.println("Total number of units taken: " + numOfUnits);
@@ -57,54 +59,61 @@ public class Lab4 {
 			 */
       if ((gradePoints - 0) >= .0123456789) {
         System.out.println("If you got an A (4.0):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - .3) >= .0123456789) {
         gradePoints -= .3;
         System.out.println("If you got an A- (3.7):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - .7) >= .0123456789) {
         gradePoints -= .4;
         System.out.println("If you got an B+ (3.3):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - 1) >= .0123456789) {
         System.out.println("If you got an B (3.0):");
         gradePoints -= .3;
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - 1.3) >= .0123456789) {
         gradePoints -= .3;
         System.out.println("If you got an B- (2.7):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - 1.7) >= .0123456789) {
         gradePoints -= .4;
         System.out.println("If you got an C+ (2.3):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
       }
       if ((gradePoints - 2) >= .0123456789) {
         gradePoints -= .3;
         System.out.println("If you got an C (2.0):");
-        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits + CS201Units));
+        double endGPA = (((currentGPA * numOfUnits) + (CS201Units * gradePoints)) / (numOfUnits
+            + CS201Units));
         System.out.printf("Your new GPA is: %.2f. The change in GPA was: %.2f%n", endGPA,
             Math.abs(endGPA - currentGPA));
 
 				/*
-				 * Since we are at the end of our calculations for each possible
+         * Since we are at the end of our calculations for each possible
 				 * grade from A to C, we need to break it off as per
 				 * instructions (The loop should break after the output is shown
 				 * for a grade of 2.0.) the loop will stop due to break;

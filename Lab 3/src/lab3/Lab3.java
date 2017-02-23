@@ -61,7 +61,8 @@ public class Lab3 {
     }
 
     // Are at least one of the values from hand and height true? (true if either or both are true)
-    System.out.println("Are at least one of the values from hand and height true? (true if either or both are true)");
+    System.out.println(
+        "Are at least one of the values from hand and height true? (true if either or both are true)");
     if ((hand.equals("yes")) || (height.equals("yes"))) {
       System.out.println("Yes.");
     } else {
@@ -77,7 +78,8 @@ public class Lab3 {
     }
 
     // Is the user older than his/her sibling/friend (as far as we can tell from the ages in months.) Show the sibling or friend's name in the output (eg, "Sally is older than you!"
-    System.out.println("Is the user older than his/her sibling/friend? Show the sibling's or friend's name in the output.");
+    System.out.println(
+        "Is the user older than his/her sibling/friend? Show the sibling's or friend's name in the output.");
     if (ageInMonths > ageOfFriendInMonths) {
       System.out.println(name + " is younger than you!");
     } else {
@@ -85,7 +87,8 @@ public class Lab3 {
     }
 
     // Is the user's age in months within 18 months of the age of the sibling/friend? You may want to use Math.abs(), which computes the absolute value of a number, for this.
-    System.out.println("Is the user's age in months within 18 months of the age of the sibling/friend?");
+    System.out
+        .println("Is the user's age in months within 18 months of the age of the sibling/friend?");
     if (Math.abs(ageInMonths + ageOfFriendInMonths) <= 18) {
       System.out.println("Yes, the user's age is within 18 months.");
     } else {
@@ -101,11 +104,14 @@ public class Lab3 {
     }
 
     // Is the user's GPA at least equal to the displacement in liters of his/her car engine?
-    System.out.println("Is the user's GPA at least equal to the displacement in liters of his/her car engine?");
+    System.out.println(
+        "Is the user's GPA at least equal to the displacement in liters of his/her car engine?");
     if (gpa >= displacement) {
-      System.out.println("Yes, the user's GPA is at least equal to the displacement of his/her car in liters.");
+      System.out.println(
+          "Yes, the user's GPA is at least equal to the displacement of his/her car in liters.");
     } else {
-      System.out.println("No, the user's GPA is not at least equal to the displacement of his/her car in liters.");
+      System.out.println(
+          "No, the user's GPA is not at least equal to the displacement of his/her car in liters.");
     }
   }
 

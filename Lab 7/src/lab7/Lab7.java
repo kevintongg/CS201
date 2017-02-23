@@ -44,7 +44,8 @@ public class Lab7 {
 
   public static void currentValues(double[] myArray) {
 
-    System.out.println("The values you entered are as follows: (Any value over 100 has been replaced with 100)");
+    System.out.println(
+        "The values you entered are as follows: (Any value over 100 has been replaced with 100)");
     for (int i = 0; i < myArray.length; i++) {
       System.out.println("#" + i + ": " + myArray[i] + ".");
     }
@@ -55,7 +56,8 @@ public class Lab7 {
     System.out.println("This part will raise each of your entered values to the third power.");
     for (int i = 0; i < myArray.length; i++) {
       double power = Math.pow(myArray[i], 3);
-      System.out.printf("For your #" + i + ", the result for " + myArray[i] + " cubed is: %.3f.\n", power);
+      System.out.printf("For your #" + i + ", the result for " + myArray[i] + " cubed is: %.3f.\n",
+          power);
     }
   } // end cubed
 
@@ -76,7 +78,8 @@ public class Lab7 {
     System.out.println("This part will take the reciprocal of each number you have entered.");
     for (int i = 0; i < myArray.length; i++) {
       reciprocal = (1.0 / myArray[i]);
-      System.out.printf("For your #" + i + ", the reciprocal of " + myArray[i] + " is: %.3f.\n", reciprocal);
+      System.out.printf("For your #" + i + ", the reciprocal of " + myArray[i] + " is: %.3f.\n",
+          reciprocal);
     }
 
   } // end flip

@@ -58,7 +58,7 @@ public class Lab2 {
     System.out.println(((temp1 - 32) * 5.d / 9.d) + " °C");
     System.out.printf("%.1f °C", ((temp2 - 32) * 5.d / 9.d));
     System.out.printf("\n" + ((temp3 - 32) * 5.d / 9.d + " °C"));
-		
+
 		/*
 		 * Tests two values for divisibility by 7 this way:
 		 * Creates an int variable, sets its value to 111, and uses modulo to determine whether the value is evenly divisible by 7
@@ -97,7 +97,8 @@ public class Lab2 {
       a = true;
       System.out.println(true);
     } else {
-      System.out.println("Your age or GPA is not greater than the values of age of 25 or GPA of 3.0");
+      System.out
+          .println("Your age or GPA is not greater than the values of age of 25 or GPA of 3.0");
       b = false;
       System.out.println(false);
     }
@@ -106,7 +107,8 @@ public class Lab2 {
       a = true;
       System.out.println(true);
     } else {
-      System.out.println("Your age and GPA is not greater than the values of age of 25 and GPA of 3.0");
+      System.out
+          .println("Your age and GPA is not greater than the values of age of 25 and GPA of 3.0");
       b = false;
       System.out.println(false);
     }

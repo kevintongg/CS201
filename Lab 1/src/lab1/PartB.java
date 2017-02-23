@@ -18,7 +18,8 @@ public class PartB {
     double GPA = 2.87;
     String name = "Kevin";
 
-    System.out.println(name + " is " + age + " and has a cumulative GPA of " + GPA + " from his community college.");
+    System.out.println(name + " is " + age + " and has a cumulative GPA of " + GPA
+        + " from his community college.");
 
   } // end main method
 
